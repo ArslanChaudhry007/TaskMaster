@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.fragments.AddItemFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productNameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_custom_background"
+        android:theme="@style/editTextLogin"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/productName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/enter_product_name"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:maxLines="5"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productQuanityLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_custom_background"
+        android:theme="@style/editTextLogin"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/productNameLayout"
+        app:layout_constraintStart_toStartOf="@+id/productNameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/productNameLayout">
+
+        <EditText
+            android:id="@+id/productQuanity_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/enter_product_quantity"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productPriceLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_custom_background"
+        android:theme="@style/editTextLogin"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/productQuanityLayout"
+        app:layout_constraintStart_toStartOf="@+id/productQuanityLayout"
+        app:layout_constraintTop_toBottomOf="@+id/productQuanityLayout">
+
+        <EditText
+            android:id="@+id/productPrice_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/enter_product_price"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productDesLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_custom_background"
+        android:theme="@style/editTextLogin"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/productPriceLayout"
+        app:layout_constraintStart_toStartOf="@+id/productPriceLayout"
+        app:layout_constraintTop_toBottomOf="@+id/productPriceLayout">
+
+        <EditText
+            android:id="@+id/productDes_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/enter_product_description"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/register_custom_btn_background"
+        android:gravity="center"
+        android:text="@string/add_item"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productDesLayout"
+        app:layout_constraintVertical_bias="0.467" />
+</androidx.constraintlayout.widget.ConstraintLayout>

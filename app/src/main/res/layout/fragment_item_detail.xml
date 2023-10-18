@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.fragments.ItemDetailFragment">
+
+    <TextView
+        android:id="@+id/txt_view1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_name"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/prodctName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:inputType="textMultiLine"
+        tools:ignore="LabelFor"
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/login_custom_background"
+        app:layout_constraintStart_toEndOf="@id/txt_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_view1" />
+
+    <TextView
+        android:id="@+id/txt_view2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_quantity"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txt_view1"
+        app:layout_constraintEnd_toEndOf="@id/txt_view1"
+        app:layout_constraintTop_toBottomOf="@id/prodctName"/>
+
+    <EditText
+        android:id="@+id/prodctQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:autofillHints=""
+        android:inputType="textMultiLine|number"
+        tools:ignore="LabelFor"
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/login_custom_background"
+        app:layout_constraintStart_toStartOf="@id/prodctName"
+        app:layout_constraintEnd_toEndOf="@+id/prodctName"
+        app:layout_constraintTop_toTopOf="@+id/txt_view2" />
+
+    <TextView
+        android:id="@+id/txt_view3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_price"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txt_view2"
+        app:layout_constraintEnd_toEndOf="@id/txt_view2"
+        app:layout_constraintTop_toBottomOf="@id/prodctQuantity"/>
+
+    <EditText
+        android:id="@+id/prodctPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:autofillHints=""
+        android:inputType="textMultiLine|number"
+        tools:ignore="LabelFor"
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/login_custom_background"
+        app:layout_constraintStart_toStartOf="@id/prodctQuantity"
+        app:layout_constraintEnd_toEndOf="@+id/prodctQuantity"
+        app:layout_constraintTop_toTopOf="@+id/txt_view3" />
+
+    <TextView
+        android:id="@+id/txt_view4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_des"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txt_view3"
+        app:layout_constraintEnd_toEndOf="@id/txt_view3"
+        app:layout_constraintTop_toBottomOf="@id/prodctPrice"/>
+
+    <EditText
+        android:id="@+id/prodctDes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:autofillHints=""
+        android:inputType="textMultiLine|text"
+        tools:ignore="LabelFor"
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/login_custom_background"
+        app:layout_constraintStart_toStartOf="@id/prodctPrice"
+        app:layout_constraintEnd_toEndOf="@+id/prodctPrice"
+        app:layout_constraintTop_toTopOf="@+id/txt_view4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

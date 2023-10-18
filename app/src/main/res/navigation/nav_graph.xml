@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.arslan.taskmaster.controller.fragments.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.arslan.taskmaster.controller.fragments.AddItemFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" />
+    <fragment
+        android:id="@+id/itemEditFragment"
+        android:name="com.arslan.taskmaster.controller.fragments.ItemEditFragment"
+        android:label="fragment_item_edit"
+        tools:layout="@layout/fragment_item_edit">
+        <argument
+            android:name="item_object"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.arslan.taskmaster.controller.fragments.ItemDetailFragment"
+        android:label="fragment_item_detail"
+        tools:layout="@layout/fragment_item_detail">
+        <argument
+            android:name="item_object"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

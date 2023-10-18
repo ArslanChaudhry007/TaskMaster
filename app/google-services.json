@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "759319870361",
+    "project_id": "taskmaster-1bf7d",
+    "storage_bucket": "taskmaster-1bf7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759319870361:android:20d884da09df11f642f108",
+        "android_client_info": {
+          "package_name": "com.arslan.taskmaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVbYKcYNTNEc93gB-BQOT2ySXzI-WgVcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

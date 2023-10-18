@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TaskMaster</string>
+    <string name="enter_mobile_number">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signup">SignUp</string>
+    <string name="forgot_password_button">Forgot Password</string>
+    <string name="enter_the_email">Enter the Email</string>
+    <string name="associated_with_your_account">associated with your account.</string>
+    <string name="todo">TODO</string>
+    <string name="all_items">All Items</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="enter_product_quantity">Enter Product Quantity</string>
+    <string name="enter_product_description">Enter Product Description</string>
+    <string name="enter_product_price">Enter Product Price</string>
+    <string name="item_name">Item Name</string>
+    <string name="action">Action</string>
+    <string name="product_name">Product Name:</string>
+    <string name="product_quantity">Product Quantity:</string>
+    <string name="product_price">Product Price:</string>
+    <string name="product_des">Product Des:</string>
+    <string name="edit_item">Edit Item</string>
+</resources>
